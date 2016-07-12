@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87D5EDCA1D34DA8C001675E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDC91D34DA8C001675E7 /* main.m */; };
+		87D5EDCD1D34DA8C001675E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDCC1D34DA8C001675E7 /* AppDelegate.m */; };
+		87D5EDD01D34DA8C001675E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDCF1D34DA8C001675E7 /* ViewController.m */; };
+		87D5EDD31D34DA8C001675E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D5EDD11D34DA8C001675E7 /* Main.storyboard */; };
+		87D5EDD51D34DA8C001675E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D5EDD41D34DA8C001675E7 /* Assets.xcassets */; };
+		87D5EDD81D34DA8C001675E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D5EDD61D34DA8C001675E7 /* LaunchScreen.storyboard */; };
+		87D5EDE31D34DA8C001675E7 /* TYADPhotoLoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDE21D34DA8C001675E7 /* TYADPhotoLoopTests.m */; };
+		87D5EDEE1D34DA8C001675E7 /* TYADPhotoLoopUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDED1D34DA8C001675E7 /* TYADPhotoLoopUITests.m */; };
+		87D5EE011D34DAD1001675E7 /* TYADPhotoLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDFD1D34DAD1001675E7 /* TYADPhotoLoop.m */; };
+		87D5EE021D34DAD1001675E7 /* TYCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D5EDFF1D34DAD1001675E7 /* TYCustomCell.m */; };
+		87D5EE031D34DAD1001675E7 /* TYCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87D5EE001D34DAD1001675E7 /* TYCustomCell.xib */; };
+		87D5EE051D34DB0D001675E7 /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87D5EE041D34DB0D001675E7 /* photo1.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87D5EDDF1D34DA8C001675E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D5EDBD1D34DA8C001675E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D5EDC41D34DA8C001675E7;
+			remoteInfo = TYADPhotoLoop;
+		};
+		87D5EDEA1D34DA8C001675E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D5EDBD1D34DA8C001675E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D5EDC41D34DA8C001675E7;
+			remoteInfo = TYADPhotoLoop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87D5EDC51D34DA8C001675E7 /* TYADPhotoLoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYADPhotoLoop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D5EDC91D34DA8C001675E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87D5EDCB1D34DA8C001675E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87D5EDCC1D34DA8C001675E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87D5EDCE1D34DA8C001675E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87D5EDCF1D34DA8C001675E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87D5EDD21D34DA8C001675E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87D5EDD41D34DA8C001675E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87D5EDD71D34DA8C001675E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87D5EDD91D34DA8C001675E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D5EDDE1D34DA8C001675E7 /* TYADPhotoLoopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYADPhotoLoopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D5EDE21D34DA8C001675E7 /* TYADPhotoLoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYADPhotoLoopTests.m; sourceTree = "<group>"; };
+		87D5EDE41D34DA8C001675E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D5EDE91D34DA8C001675E7 /* TYADPhotoLoopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYADPhotoLoopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D5EDED1D34DA8C001675E7 /* TYADPhotoLoopUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYADPhotoLoopUITests.m; sourceTree = "<group>"; };
+		87D5EDEF1D34DA8C001675E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D5EDFC1D34DAD1001675E7 /* TYADPhotoLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYADPhotoLoop.h; sourceTree = "<group>"; };
+		87D5EDFD1D34DAD1001675E7 /* TYADPhotoLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYADPhotoLoop.m; sourceTree = "<group>"; };
+		87D5EDFE1D34DAD1001675E7 /* TYCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCustomCell.h; sourceTree = "<group>"; };
+		87D5EDFF1D34DAD1001675E7 /* TYCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCustomCell.m; sourceTree = "<group>"; };
+		87D5EE001D34DAD1001675E7 /* TYCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYCustomCell.xib; sourceTree = "<group>"; };
+		87D5EE041D34DB0D001675E7 /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87D5EDC21D34DA8C001675E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D5EDDB1D34DA8C001675E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D5EDE61D34DA8C001675E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87D5EDBC1D34DA8C001675E7 = {
+			isa = PBXGroup;
+			children = (
+				87D5EDC71D34DA8C001675E7 /* TYADPhotoLoop */,
+				87D5EDE11D34DA8C001675E7 /* TYADPhotoLoopTests */,
+				87D5EDEC1D34DA8C001675E7 /* TYADPhotoLoopUITests */,
+				87D5EDC61D34DA8C001675E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87D5EDC61D34DA8C001675E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87D5EDC51D34DA8C001675E7 /* TYADPhotoLoop.app */,
+				87D5EDDE1D34DA8C001675E7 /* TYADPhotoLoopTests.xctest */,
+				87D5EDE91D34DA8C001675E7 /* TYADPhotoLoopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87D5EDC71D34DA8C001675E7 /* TYADPhotoLoop */ = {
+			isa = PBXGroup;
+			children = (
+				87D5EDFB1D34DACC001675E7 /* Source */,
+				87D5EDCB1D34DA8C001675E7 /* AppDelegate.h */,
+				87D5EDCC1D34DA8C001675E7 /* AppDelegate.m */,
+				87D5EDCE1D34DA8C001675E7 /* ViewController.h */,
+				87D5EDD11D34DA8C001675E7 /* Main.storyboard */,
+				87D5EDD41D34DA8C001675E7 /* Assets.xcassets */,
+				87D5EDCF1D34DA8C001675E7 /* ViewController.m */,
+				87D5EDD61D34DA8C001675E7 /* LaunchScreen.storyboard */,
+				87D5EDD91D34DA8C001675E7 /* Info.plist */,
+				87D5EDC81D34DA8C001675E7 /* Supporting Files */,
+			);
+			path = TYADPhotoLoop;
+			sourceTree = "<group>";
+		};
+		87D5EDC81D34DA8C001675E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87D5EE041D34DB0D001675E7 /* photo1.jpg */,
+				87D5EDC91D34DA8C001675E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87D5EDE11D34DA8C001675E7 /* TYADPhotoLoopTests */ = {
+			isa = PBXGroup;
+			children = (
+				87D5EDE21D34DA8C001675E7 /* TYADPhotoLoopTests.m */,
+				87D5EDE41D34DA8C001675E7 /* Info.plist */,
+			);
+			path = TYADPhotoLoopTests;
+			sourceTree = "<group>";
+		};
+		87D5EDEC1D34DA8C001675E7 /* TYADPhotoLoopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87D5EDED1D34DA8C001675E7 /* TYADPhotoLoopUITests.m */,
+				87D5EDEF1D34DA8C001675E7 /* Info.plist */,
+			);
+			path = TYADPhotoLoopUITests;
+			sourceTree = "<group>";
+		};
+		87D5EDFB1D34DACC001675E7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				87D5EDFC1D34DAD1001675E7 /* TYADPhotoLoop.h */,
+				87D5EDFD1D34DAD1001675E7 /* TYADPhotoLoop.m */,
+				87D5EDFE1D34DAD1001675E7 /* TYCustomCell.h */,
+				87D5EDFF1D34DAD1001675E7 /* TYCustomCell.m */,
+				87D5EE001D34DAD1001675E7 /* TYCustomCell.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87D5EDC41D34DA8C001675E7 /* TYADPhotoLoop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D5EDF21D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoop" */;
+			buildPhases = (
+				87D5EDC11D34DA8C001675E7 /* Sources */,
+				87D5EDC21D34DA8C001675E7 /* Frameworks */,
+				87D5EDC31D34DA8C001675E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYADPhotoLoop;
+			productName = TYADPhotoLoop;
+			productReference = 87D5EDC51D34DA8C001675E7 /* TYADPhotoLoop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87D5EDDD1D34DA8C001675E7 /* TYADPhotoLoopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D5EDF51D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoopTests" */;
+			buildPhases = (
+				87D5EDDA1D34DA8C001675E7 /* Sources */,
+				87D5EDDB1D34DA8C001675E7 /* Frameworks */,
+				87D5EDDC1D34DA8C001675E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87D5EDE01D34DA8C001675E7 /* PBXTargetDependency */,
+			);
+			name = TYADPhotoLoopTests;
+			productName = TYADPhotoLoopTests;
+			productReference = 87D5EDDE1D34DA8C001675E7 /* TYADPhotoLoopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87D5EDE81D34DA8C001675E7 /* TYADPhotoLoopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87D5EDF81D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoopUITests" */;
+			buildPhases = (
+				87D5EDE51D34DA8C001675E7 /* Sources */,
+				87D5EDE61D34DA8C001675E7 /* Frameworks */,
+				87D5EDE71D34DA8C001675E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87D5EDEB1D34DA8C001675E7 /* PBXTargetDependency */,
+			);
+			name = TYADPhotoLoopUITests;
+			productName = TYADPhotoLoopUITests;
+			productReference = 87D5EDE91D34DA8C001675E7 /* TYADPhotoLoopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87D5EDBD1D34DA8C001675E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tiny;
+				TargetAttributes = {
+					87D5EDC41D34DA8C001675E7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					87D5EDDD1D34DA8C001675E7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 87D5EDC41D34DA8C001675E7;
+					};
+					87D5EDE81D34DA8C001675E7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 87D5EDC41D34DA8C001675E7;
+					};
+				};
+			};
+			buildConfigurationList = 87D5EDC01D34DA8C001675E7 /* Build configuration list for PBXProject "TYADPhotoLoop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87D5EDBC1D34DA8C001675E7;
+			productRefGroup = 87D5EDC61D34DA8C001675E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87D5EDC41D34DA8C001675E7 /* TYADPhotoLoop */,
+				87D5EDDD1D34DA8C001675E7 /* TYADPhotoLoopTests */,
+				87D5EDE81D34DA8C001675E7 /* TYADPhotoLoopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87D5EDC31D34DA8C001675E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D5EE051D34DB0D001675E7 /* photo1.jpg in Resources */,
+				87D5EDD81D34DA8C001675E7 /* LaunchScreen.storyboard in Resources */,
+				87D5EE031D34DAD1001675E7 /* TYCustomCell.xib in Resources */,
+				87D5EDD51D34DA8C001675E7 /* Assets.xcassets in Resources */,
+				87D5EDD31D34DA8C001675E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D5EDDC1D34DA8C001675E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D5EDE71D34DA8C001675E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87D5EDC11D34DA8C001675E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D5EE021D34DAD1001675E7 /* TYCustomCell.m in Sources */,
+				87D5EE011D34DAD1001675E7 /* TYADPhotoLoop.m in Sources */,
+				87D5EDD01D34DA8C001675E7 /* ViewController.m in Sources */,
+				87D5EDCD1D34DA8C001675E7 /* AppDelegate.m in Sources */,
+				87D5EDCA1D34DA8C001675E7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D5EDDA1D34DA8C001675E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D5EDE31D34DA8C001675E7 /* TYADPhotoLoopTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87D5EDE51D34DA8C001675E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D5EDEE1D34DA8C001675E7 /* TYADPhotoLoopUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87D5EDE01D34DA8C001675E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D5EDC41D34DA8C001675E7 /* TYADPhotoLoop */;
+			targetProxy = 87D5EDDF1D34DA8C001675E7 /* PBXContainerItemProxy */;
+		};
+		87D5EDEB1D34DA8C001675E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D5EDC41D34DA8C001675E7 /* TYADPhotoLoop */;
+			targetProxy = 87D5EDEA1D34DA8C001675E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87D5EDD11D34DA8C001675E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87D5EDD21D34DA8C001675E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87D5EDD61D34DA8C001675E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87D5EDD71D34DA8C001675E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87D5EDF01D34DA8C001675E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87D5EDF11D34DA8C001675E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87D5EDF31D34DA8C001675E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TYADPhotoLoop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eegsmart.TYADPhotoLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87D5EDF41D34DA8C001675E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TYADPhotoLoop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eegsmart.TYADPhotoLoop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87D5EDF61D34DA8C001675E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYADPhotoLoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eegsmart.TYADPhotoLoopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYADPhotoLoop.app/TYADPhotoLoop";
+			};
+			name = Debug;
+		};
+		87D5EDF71D34DA8C001675E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYADPhotoLoopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eegsmart.TYADPhotoLoopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYADPhotoLoop.app/TYADPhotoLoop";
+			};
+			name = Release;
+		};
+		87D5EDF91D34DA8C001675E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TYADPhotoLoopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eegsmart.TYADPhotoLoopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TYADPhotoLoop;
+			};
+			name = Debug;
+		};
+		87D5EDFA1D34DA8C001675E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TYADPhotoLoopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eegsmart.TYADPhotoLoopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TYADPhotoLoop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87D5EDC01D34DA8C001675E7 /* Build configuration list for PBXProject "TYADPhotoLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D5EDF01D34DA8C001675E7 /* Debug */,
+				87D5EDF11D34DA8C001675E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87D5EDF21D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D5EDF31D34DA8C001675E7 /* Debug */,
+				87D5EDF41D34DA8C001675E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		87D5EDF51D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D5EDF61D34DA8C001675E7 /* Debug */,
+				87D5EDF71D34DA8C001675E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		87D5EDF81D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D5EDF91D34DA8C001675E7 /* Debug */,
+				87D5EDFA1D34DA8C001675E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87D5EDBD1D34DA8C001675E7 /* Project object */;
+}
