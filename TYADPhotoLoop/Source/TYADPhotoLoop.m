@@ -17,6 +17,8 @@
 
 @property (nonatomic,strong)UICollectionView *collectionView;
 
+@property (nonatomic,strong)UICollectionViewFlowLayout *flowLayout;
+
 @property (nonatomic,strong)NSTimer *timer;
 
 @end
@@ -43,6 +45,12 @@
 }
 
 
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    self.collectionView.frame = self.bounds;
+    self.flowLayout.itemSize = CGSizeMake(kViewWidth, kViewHeight);
+}
 
 
 -(void)setPhotos:(NSArray *)photos
@@ -62,6 +70,7 @@
     flowlayout.itemSize = CGSizeMake(kViewWidth, kViewHeight);
     flowlayout.minimumLineSpacing = 0;
     flowlayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.flowLayout = flowlayout;
     
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flowlayout];
     collectionView.delegate = self;
@@ -120,6 +129,10 @@
 
 -(void)timeLoop
 {
+    if (self.photos.count == 0) {
+        return;
+    }
+    
     NSIndexPath *currentIndexPath = [[self.collectionView indexPathsForVisibleItems] lastObject];
     
     NSIndexPath *currentIndexPathReset = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:kMaxSection/2];
