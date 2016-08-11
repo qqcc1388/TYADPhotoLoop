@@ -21,6 +21,8 @@
 
 @property (nonatomic,strong)NSTimer *timer;
 
+@property (nonatomic,copy) photoClickEvent clickEvent;
+
 @end
 
 @implementation TYADPhotoLoop
@@ -64,6 +66,7 @@
     //更新图片，更新布局
     
 }
+
 -(void)initialize
 {
     //初始化collectionView
@@ -150,6 +153,13 @@
 }
 
 
+-(void)addTouchEvent:(photoClickEvent)event
+{
+    self.clickEvent = event;
+}
+
+
+
 #pragma mark - UICollectionViewDelegate & UICollectionViewDateSoure
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -170,6 +180,17 @@
     cell.imgView.image = [UIImage imageNamed:self.photos[indexPath.row]];
     
     return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
+    //将点击事件传递出去
+    if (self.clickEvent) {
+        self.clickEvent(self,indexPath.row);
+    }
+    
 }
 
 #pragma mark - scollView滚动代理

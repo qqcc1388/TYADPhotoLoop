@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class TYADPhotoLoop;
+typedef void(^photoClickEvent)(TYADPhotoLoop *photoLoop,NSInteger selectIndex);
+
 @interface TYADPhotoLoop : UIView
 
 /**
@@ -29,5 +33,7 @@
  *  轮播图定时时间 默认2.5s
  */
 @property (nonatomic,assign) NSTimeInterval duration;
+
+-(void)addTouchEvent:(photoClickEvent)event;
 
 @end

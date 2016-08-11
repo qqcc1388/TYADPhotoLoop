@@ -115,9 +115,9 @@
 				87D5EDCB1D34DA8C001675E7 /* AppDelegate.h */,
 				87D5EDCC1D34DA8C001675E7 /* AppDelegate.m */,
 				87D5EDCE1D34DA8C001675E7 /* ViewController.h */,
+				87D5EDCF1D34DA8C001675E7 /* ViewController.m */,
 				87D5EDD11D34DA8C001675E7 /* Main.storyboard */,
 				87D5EDD41D34DA8C001675E7 /* Assets.xcassets */,
-				87D5EDCF1D34DA8C001675E7 /* ViewController.m */,
 				87D5EDD61D34DA8C001675E7 /* LaunchScreen.storyboard */,
 				87D5EDD91D34DA8C001675E7 /* Info.plist */,
 				87D5EDC81D34DA8C001675E7 /* Supporting Files */,
@@ -526,6 +526,7 @@
 				87D5EDF41D34DA8C001675E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87D5EDF51D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoopTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +535,7 @@
 				87D5EDF71D34DA8C001675E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87D5EDF81D34DA8C001675E7 /* Build configuration list for PBXNativeTarget "TYADPhotoLoopUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +544,7 @@
 				87D5EDFA1D34DA8C001675E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

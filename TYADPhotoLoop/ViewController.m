@@ -22,6 +22,9 @@
     
     loop.photos =@[@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg",@"photo1.jpg"];
     
+    [loop addTouchEvent:^(TYADPhotoLoop *photoLoop, NSInteger selectIndex) {
+        NSLog(@"%@  --- selectIndex = %zi",photoLoop,selectIndex);
+    }];
     [self.view addSubview:loop];
 }
 
