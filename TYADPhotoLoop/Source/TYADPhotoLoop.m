@@ -50,6 +50,7 @@
     [super layoutSubviews];
     self.collectionView.frame = self.bounds;
     self.flowLayout.itemSize = CGSizeMake(kViewWidth, kViewHeight);
+    self.pageControl.center = CGPointMake(self.center.x, kViewHeight - 20);
 }
 
 
@@ -85,7 +86,6 @@
     //PageControl
     UIPageControl *pageControl = [[UIPageControl alloc] init];
     [pageControl sizeToFit];
-    pageControl.center = CGPointMake(self.center.x, kViewHeight - 30);
     pageControl.pageIndicatorTintColor = [UIColor orangeColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
     pageControl.backgroundColor = [UIColor redColor];
