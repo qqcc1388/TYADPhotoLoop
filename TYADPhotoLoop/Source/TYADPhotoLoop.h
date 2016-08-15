@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
+@interface TYPageControl : UIPageControl
+
+@property (nonatomic, strong)UIImage *currentImage;
+@property (nonatomic, strong)UIImage *inactiveImage;
+
+@end
+
+
 @class TYADPhotoLoop;
 typedef void(^photoClickEvent)(TYADPhotoLoop *photoLoop,NSInteger selectIndex);
 

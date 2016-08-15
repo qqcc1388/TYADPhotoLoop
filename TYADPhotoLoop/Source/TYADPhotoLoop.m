@@ -13,6 +13,53 @@
 #define kViewWidth self.frame.size.width
 #define kViewHeight self.frame.size.height
 
+@implementation TYPageControl
+
+//图片切换时，改变pagecontrol 的图片
+- (void)updateDots {
+    for (int i = 0; i < [self.subviews count]; i++) {
+        UIImageView * dot = [self imageViewForSubview:  [self.subviews objectAtIndex: i]];
+        if (i == self.currentPage) dot.image = self.currentImage;
+        else dot.image = self.inactiveImage;
+    }
+}
+
+- (UIImageView *)imageViewForSubview:(UIView *) view {
+    UIImageView * dot = nil;
+    if ([view isKindOfClass: [UIView class]]) {
+        for (UIView* subview in view.subviews) {
+            if ([subview isKindOfClass:[UIImageView class]]) {
+                dot = (UIImageView *)subview;
+                break;
+            }
+        }
+        if (dot == nil) {
+            dot = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, view.frame.size.width, view.frame.size.height)];
+            [view addSubview:dot];
+        }
+    }else {
+        dot = (UIImageView *) view;
+    }
+    
+    return dot;
+}
+
+-(void)setCurrentImage:(UIImage *)currentImage
+{
+    _currentImage = currentImage;
+    [self setNeedsLayout];
+}
+
+-(void)setInactiveImage:(UIImage *)inactiveImage
+{
+    _inactiveImage = inactiveImage;
+    [self setNeedsLayout];
+}
+
+@end
+
+
+
 @interface TYADPhotoLoop ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic,strong)UICollectionView *collectionView;
@@ -87,10 +134,12 @@
     _collectionView = collectionView;
 
     //PageControl
-    UIPageControl *pageControl = [[UIPageControl alloc] init];
+    TYPageControl *pageControl = [[TYPageControl alloc] init];
     [pageControl sizeToFit];
-    pageControl.pageIndicatorTintColor = [UIColor orangeColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+//    pageControl.pageIndicatorTintColor = [UIColor orangeColor];
+//    pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+    pageControl.currentImage = [UIImage imageNamed:@"currentPage_icon"];
+    pageControl.inactiveImage = [UIImage imageNamed:@"pageIndicator_icon"];
     pageControl.backgroundColor = [UIColor redColor];
     _pageControl = pageControl;
     [self addSubview:pageControl];
