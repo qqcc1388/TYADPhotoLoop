@@ -12,8 +12,23 @@
 #define kMaxSection  100
 #define kViewWidth self.frame.size.width
 #define kViewHeight self.frame.size.height
+@interface TYPageControl ()
+@property (nonatomic, strong)UIImage *currentImage;
+@property (nonatomic, strong)UIImage *inactiveImage;
+@end
 
 @implementation TYPageControl
+
+- (instancetype)initWithFrame:(CGRect)frame
+             currentImageName:(NSString *)currentImageName
+           indicatorImageName:(NSString *)indicatorImageName {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.currentImage = [UIImage imageNamed:currentImageName];
+        self.inactiveImage = [UIImage imageNamed:indicatorImageName];
+    }
+    return self;
+}
 
 //图片切换时，改变pagecontrol 的图片
 - (void)updateDots {
@@ -44,16 +59,9 @@
     return dot;
 }
 
--(void)setCurrentImage:(UIImage *)currentImage
-{
-    _currentImage = currentImage;
-    [self setNeedsLayout];
-}
-
--(void)setInactiveImage:(UIImage *)inactiveImage
-{
-    _inactiveImage = inactiveImage;
-    [self setNeedsLayout];
+- (void)setCurrentPage:(NSInteger)currentPage {
+    [super setCurrentPage:currentPage];
+    [self updateDots];
 }
 
 @end
@@ -134,13 +142,12 @@
     _collectionView = collectionView;
 
     //PageControl
-    TYPageControl *pageControl = [[TYPageControl alloc] init];
-    [pageControl sizeToFit];
-//    pageControl.pageIndicatorTintColor = [UIColor orangeColor];
-//    pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
-    pageControl.currentImage = [UIImage imageNamed:@"currentPage_icon"];
-    pageControl.inactiveImage = [UIImage imageNamed:@"pageIndicator_icon"];
-    pageControl.backgroundColor = [UIColor redColor];
+    TYPageControl *pageControl = [[TYPageControl alloc] initWithFrame:CGRectMake(10, kViewHeight - 20, kViewWidth - 20, 20) currentImageName:@"point_sel" indicatorImageName:@"point"];
+    //    pageControl.backgroundColor = [UIColor redColor];
+    
+    _pageControl.currentPage = 0;
+    _pageControl.hidesForSinglePage = YES;
+    _pageControl.userInteractionEnabled = YES;
     _pageControl = pageControl;
     [self addSubview:pageControl];
     

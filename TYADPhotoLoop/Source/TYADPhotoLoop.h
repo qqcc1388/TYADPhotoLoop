@@ -11,8 +11,9 @@
 
 @interface TYPageControl : UIPageControl
 
-@property (nonatomic, strong)UIImage *currentImage;
-@property (nonatomic, strong)UIImage *inactiveImage;
+- (instancetype)initWithFrame:(CGRect)frame
+             currentImageName:(NSString *)currentImageName
+           indicatorImageName:(NSString *)indicatorImageName;
 
 @end
 
